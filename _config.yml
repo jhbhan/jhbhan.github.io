@@ -1,14 +1,14 @@
 # Your name and what you do
-name: Eve Adam
+name: Jason Bhan
 bio: Software Developer
 
-description: Eve Adam's Personal Website
+description: Jason's Personal Website
 
 # Profile picture
 picture: assets/images/profile.jpg
 
 # your url: http://USERNAME.github.io
-url: https://jibolash.github.io/Eve/
+url: https://jhbhan.github.io/website/
 
 # do you want to display social media links? true or false
 social-media: true
@@ -51,8 +51,8 @@ skills-list:
     - AngularJS, ReactJS
     - Java, Android
     - Python
-    - MySQL - MongoDB    
-    - Git    
+    - MySQL - MongoDB
+    - Git
 
 # do you want to display a projects section? true or false
 projects: true
@@ -76,7 +76,6 @@ project-list:
         description: An android app for meditation and mindfulness
         url: https://github.com/Khosbayar/Transcend
 
-
 # do you want to display the theme attribution? true or false
 footer: true
 
@@ -84,6 +83,6 @@ footer: true
 animation: true
 
 gems:
-  - jekyll-seo-tag
+    - jekyll-seo-tag
 
 exclude: [README.md, Gemfile, Gemfile.lock, _site, Rakefile, travis.sh, vendor]
