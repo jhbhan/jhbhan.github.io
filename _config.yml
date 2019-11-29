@@ -15,10 +15,10 @@ social-media: true
 # Add your username for the social media websites listed below
 # If you don't have an account on any of them, comment out the line
 # facebook: myfacebook
-twitter: mytwitter
-linkedin: mylinkedin
-github: mygithub
-email: myemail@gmail.com
+# twitter: mytwitter
+linkedin: https://www.linkedin.com/in/jhbhan/
+github: https://github.com/jhbhan/
+email: jhbhan@gmail.com
 # google: mygoogle
 # instagram: myinstagram
 # pinterest: mypinterest
