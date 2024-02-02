@@ -25,6 +25,8 @@ width: normal
 # do you want to display an about section? true or false
 about: true
 
+privacy: true
+
 # do you want to display a skills section? true or false
 skills: true
 
