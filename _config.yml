@@ -12,25 +12,10 @@ url: https://jhbhan.github.io/website/
 
 # do you want to display social media links? true or false
 social-media: true
-# Add your username for the social media websites listed below
-# If you don't have an account on any of them, comment out the line
-# facebook: myfacebook
-# twitter: mytwitter
+
 linkedin: https://www.linkedin.com/in/jhbhan/
 github: https://github.com/jhbhan/
-email: jhbhan@gmail.com
-# google: mygoogle
-# instagram: myinstagram
-# pinterest: mypinterest
-# youtube: myyoutube
-# spotify: myspotify
-# lastfm: mylastfm
-# stackoverflow: 7044681/mystackoverflow
-# quora: userquora
-# reddit: username
-# medium: medium
-# vimeo: myvimeo
-# lanyrd: mylanyrd
+email: jhbhan.dev@gmail.com
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
@@ -45,32 +30,18 @@ skills: true
 
 # add your skills here
 skills-list:
-    - C/C++
-    - C#/.NET
-    - Javascript, NodeJS, ReactJS
-    - Python
-    - Xamarin/Swift
-    - Python
-    - MySQL
-    - Git
+    - React
+    - Guitar
+    - Korean Cuisine
 
 # do you want to display a projects section? true or false
 projects: true
 
 # add your projects here
 project-list:
-    Lango:
-        name: Lango
-        description: English to Korean Flashcard Web Application
-        url: https://github.com/jhbhan/Lango
-    Sharetunes:
-        name: Sharetunes
-        description: Spotify extention app to add songs to your playlist while driving
-        url: https://github.com/ECS189E-GroupTNJ/ECS189EProject
-    Deep Space Delivery:
-        name: Deep Space Delivery
-        description: Spaceteam inspired two-player collaborative game
-        url: https://github.com/glaive345/162FinalProject
+    MindDump:
+        name: Mind-Dump
+        description: little project i made for myself. contact me for any support at jhbhan.dev@gmail.com
 
 # do you want to display the theme attribution? true or false
 footer: true
