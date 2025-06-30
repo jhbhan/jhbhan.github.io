@@ -1,10 +1,9 @@
-import type { ReactNode, ButtonHTMLAttributes, AnchorHTMLAttributes } from "react"
+import type { ButtonHTMLAttributes, AnchorHTMLAttributes } from "react"
 
 type ButtonVariant = "primary" | "outline" | "ghost"
 type ButtonSize = "default" | "icon"
 
 interface BaseButtonProps {
-  children: ReactNode
   variant?: ButtonVariant
   size?: ButtonSize
   className?: string
