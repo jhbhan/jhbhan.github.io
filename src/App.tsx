@@ -1,10 +1,10 @@
 "use client"
 
 import { MyPage } from "./MyPage"
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import PlayGround from "./PlayGround";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <MyPage />
