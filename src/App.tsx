@@ -6,11 +6,11 @@ import PlayGround from "./PlayGround";
 
 const router = createHashRouter([
   {
-    path: "/",
+    path: "",
     element: <MyPage />
   },
   {
-    path: "/playground",
+    path: "playground",
     element: <PlayGround />
   }
 ]);
