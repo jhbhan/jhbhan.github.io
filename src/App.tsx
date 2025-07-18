@@ -1,24 +1,18 @@
-"use client"
-
-import { MyPage } from "./MyPage"
-import { createHashRouter, RouterProvider } from "react-router-dom";
+import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
+import { MyPage } from "./MyPage";
 import PlayGround from "./PlayGround";
-
-const router = createHashRouter([
-  {
-    path: "",
-    element: <MyPage />
-  },
-  {
-    path: "playground",
-    element: <PlayGround />
-  }
-]);
 
 function App() {
   return (
-    <RouterProvider router={router} />
-  )
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<MyPage />} />
+        <Route path="/playground" element={<PlayGround />} />
+        {/* wildcard route */}
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
+    </HashRouter>
+  );
 }
 
-export default App
+export default App;
