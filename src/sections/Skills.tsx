@@ -1,4 +1,4 @@
-import SkillBadge from "./components/SkillBadge";
+import SkillBadge from "../components/SkillBadge";
 
 export default function Skills() {
     return (

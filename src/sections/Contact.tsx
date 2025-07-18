@@ -1,6 +1,7 @@
-import { Github, Linkedin, Mail } from "lucide-react";
-import ContactForm from "./components/ContactForm";
-import { EMAIL_URL, GITHUB_URL, LINKEDIN_URL } from "./urls";
+import { Mail, Github, Linkedin } from "lucide-react";
+import ContactForm from "../components/ContactForm";
+import { EMAIL_URL, GITHUB_URL, LINKEDIN_URL } from "../urls";
+
 
 function Contact() {
     return (

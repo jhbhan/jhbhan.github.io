@@ -34,7 +34,7 @@ const getButtonClasses = (variant: ButtonVariant = "primary", size: ButtonSize =
     icon: "h-10 w-10",
   }
 
-  return `${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]}`
+  return `${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]} hover:cursor-pointer`
 }
 
 export default function Button({ children, variant, size, className, ...props }: ButtonProps) {
