@@ -8,6 +8,7 @@ function App() {
       <Routes>
         <Route path="/" element={<MyPage />} />
         <Route path="/playground" element={<PlayGround />} />
+        <Route path="/playground/:type" element={<PlayGround />} />
         {/* wildcard route */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>

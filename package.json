@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@jhbhan/genealogy-games": "^1.0.1",
+    "@jhbhan/parable-quiz": "^1.0.6",
     "@tailwindcss/vite": "^4.1.11",
     "lucide-react": "^0.525.0",
     "react": "^19.1.0",
