@@ -41,7 +41,7 @@ export default function Button({ children, variant, size, className, ...props }:
   const classes = `${getButtonClasses(variant, size)} ${className || ""}`
 
   if (props.as === "a") {
-    const { as, ...anchorProps } = props
+    const { ...anchorProps } = props
     return (
       <a className={classes} {...anchorProps}>
         {children}
@@ -49,7 +49,7 @@ export default function Button({ children, variant, size, className, ...props }:
     )
   }
 
-  const { as, ...buttonProps } = props as ButtonAsButton
+  const { ...buttonProps } = props as ButtonAsButton
   return (
     <button className={classes} {...buttonProps}>
       {children}
