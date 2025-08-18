@@ -1,4 +1,5 @@
 import GenealogyGame from "@jhbhan/genealogy-games";
+import KingsQuiz from "@jhbhan/kings-quiz";
 import { ParablesQuiz } from "@jhbhan/parable-quiz";
 import { useParams, useNavigate } from "react-router-dom";
 
@@ -8,7 +9,8 @@ interface PlayGroundProps {
 
 const gameList = [
   { url: "/playground/genealogy", label: "Genealogy Game" },
-  { url: "/playground/parable", label: "Parables Quiz" }
+  { url: "/playground/parable", label: "Parables Quiz" },
+  { url: "/playground/kings", label: "Kings Quiz" }, 
 ];
 
 interface GameSelectionButtonProps {
@@ -52,6 +54,7 @@ const PlayGround = ({ type }: PlayGroundProps) => {
     <>
       {type === "genealogy" && <GenealogyGame />}
       {type === "parable" && <ParablesQuiz />}
+      {type === "kings" && <KingsQuiz />}
     </>
   );
 };
