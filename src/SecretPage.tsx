@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { literatureApi } from './api/literatureApi';
-import { StepPill } from './components/StepPill';
-import { StudyCard } from './components/StudyCard';
-import { ResultsList } from './components/ResultsList';
+import { StepPill } from './components/study/StepPill';
+import { StudyCard } from './components/study/StudyCard';
+import { ResultsList } from './components/study/ResultsList';
 import './SecretPage.css';
 
 export function SecretPage() {
