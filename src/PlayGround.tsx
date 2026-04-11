@@ -10,7 +10,7 @@ interface PlayGroundProps {
 const gameList = [
   { url: "/playground/genealogy", label: "Genealogy Game" },
   { url: "/playground/parable", label: "Parables Quiz" },
-  { url: "/playground/kings", label: "Kings Quiz" }, 
+  { url: "/playground/kings", label: "Kings Quiz" },
 ];
 
 interface GameSelectionButtonProps {
