@@ -20,7 +20,7 @@ export interface ComparisonResult {
   studies: ComparisonStudy[];
 }
 
-const URL = "https://8539852b27d737c54d69d5a15610e246.balena-devices.com/trivia";
+const URL = "https://8539852b27d737c54d69d5a15610e246.balena-devices.com";
 const checkStudyURL = `${URL}/check-study`;
 const getStudiesURL = `${URL}/get-studies`;
 export const literatureApi = {
