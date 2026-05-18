@@ -13,12 +13,12 @@ interface ProjectCardProps {
 export default function ProjectCard({ title, description, tags, icon }: ProjectCardProps) {
   return (
     <div className="flex h-full flex-col rounded-lg border bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-md">
-      <div className="flex items-center gap-4 pb-2">
+      <div className="flex items-center gap-4 pb-4">
         {icon}
-        <h3 className="text-xl font-semibold">{title}</h3>
+        <h3 className="text-2xl font-bold text-gray-900">{title}</h3>
       </div>
       <div className="flex-1">
-        <p className="text-gray-600">{description}</p>
+        <p className="text-gray-700 leading-relaxed">{description}</p>
         <div className="mt-6 flex flex-wrap gap-2">
           {tags.map((tag) => (
             <Badge key={tag} variant="secondary">

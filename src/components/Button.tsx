@@ -1,7 +1,7 @@
 import type { ButtonHTMLAttributes, AnchorHTMLAttributes } from "react"
 
 type ButtonVariant = "primary" | "outline" | "ghost"
-type ButtonSize = "default" | "icon"
+type ButtonSize = "default" | "icon" | "lg"
 
 interface BaseButtonProps {
   variant?: ButtonVariant
@@ -32,6 +32,7 @@ const getButtonClasses = (variant: ButtonVariant = "primary", size: ButtonSize =
   const sizeClasses = {
     default: "h-10 px-4 py-2",
     icon: "h-10 w-10",
+    lg: "h-12 px-8 text-lg",
   }
 
   return `${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]} hover:cursor-pointer`

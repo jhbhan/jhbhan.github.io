@@ -18,36 +18,30 @@ export function MyPage() {
   return (
     <div className="min-h-screen bg-white" id="top">
       {/* Header */}
-      <header className="sticky top-0 z-10 border-b bg-white/80 backdrop-blur-sm">
-        <div className="container mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
+      <header className="sticky top-0 z-10 border-b bg-white/90 backdrop-blur-md">
+        <div className="container mx-auto flex h-16 max-w-5xl items-center justify-between px-6">
           <button
             onClick={() => scrollToSection("top")}
-            className="text-md font-bold hover:text-gray-600 transition-colors"
+            className="text-lg font-bold hover:text-gray-600 transition-colors"
           >
             Jason Bhan
           </button>
-          <nav className="flex gap-6">
-            {/* <button
-              onClick={() => scrollToSection("about")}
-              className="text-sm font-medium hover:text-gray-600 transition-colors"
-            >
-              About
-            </button> */}
+          <nav className="flex gap-8">
             <button
               onClick={() => scrollToSection("projects")}
-              className="text-sm font-medium hover:text-gray-600 transition-colors"
+              className="text-sm font-semibold hover:text-gray-600 transition-colors"
             >
               Projects
             </button>
             <button
               onClick={() => scrollToSection("skills")}
-              className="text-sm font-medium hover:text-gray-600 transition-colors"
+              className="text-sm font-semibold hover:text-gray-600 transition-colors"
             >
               Skills
             </button>
             <button
               onClick={() => scrollToSection("contact")}
-              className="text-sm font-medium hover:text-gray-600 transition-colors"
+              className="text-sm font-semibold hover:text-gray-600 transition-colors"
             >
               Contact
             </button>
@@ -56,28 +50,24 @@ export function MyPage() {
       </header>
 
       {/* Hero Section */}
-      <section className="container mx-auto max-w-6xl px-4 py-16 md:py-16">
-        <div className="flex flex-col items-start gap-6">
-          <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
-            Hi, I'm <span className="text-gray-800">Jason Bhan</span>
+      <section className="container mx-auto max-w-5xl px-6 py-16 md:py-24">
+        <div className="flex flex-col items-center text-center gap-8">
+          <h1 className="text-6xl font-extrabold tracking-tight sm:text-7xl text-gray-900">
+            Jason Bhan
           </h1>
-          <p className="max-w-[600px] text-gray-600 md:text-xl">
-            I'm a Software Engineer who loves building responsive, user-focused web apps.  
-            This site highlights my personal projects — ideas I’ve explored, things I’ve built for fun, and tech I enjoy.  
-            If you're interested in my professional experience, you can view my resume
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="pl-2 underline hover:text-gray-800">
-              here
-            </a>.
+          <p className="max-w-[700px] text-gray-700 text-lg md:text-xl leading-relaxed font-medium">
+            Software Engineer building clean, user-centric mobile and web applications.  
+            Focused on simplicity, performance, and great user experience.
           </p>
-          <div className="flex gap-4">
-            <Button onClick={() => scrollToSection("projects")} variant="primary">
+          <div className="flex flex-wrap justify-center gap-4">
+            <Button onClick={() => scrollToSection("projects")} variant="primary" size="lg" className="rounded-full px-10 shadow-lg shadow-gray-200">
               View My Projects
             </Button>
-            <Button onClick={() => scrollToSection("contact")} variant="outline">
+            <Button onClick={() => scrollToSection("contact")} variant="outline" size="lg" className="rounded-full px-10">
               Get In Touch
             </Button>
           </div>
-          <div className="mt-2 flex gap-4">
+          <div className="flex gap-8 mt-6">
             <Button
               as="a"
               href={GITHUB_URL}
@@ -85,8 +75,9 @@ export function MyPage() {
               rel="noopener noreferrer"
               variant="ghost"
               size="icon"
+              className="text-gray-700 hover:text-gray-900 transition-transform hover:scale-110"
             >
-              <Github className="h-5 w-5" />
+              <Github className="h-7 w-7" />
               <span className="sr-only">GitHub</span>
             </Button>
             <Button
@@ -96,12 +87,19 @@ export function MyPage() {
               rel="noopener noreferrer"
               variant="ghost"
               size="icon"
+              className="text-gray-700 hover:text-gray-900 transition-transform hover:scale-110"
             >
-              <Linkedin className="h-5 w-5" />
+              <Linkedin className="h-7 w-7" />
               <span className="sr-only">LinkedIn</span>
             </Button>
-            <Button as="a" href={EMAIL_URL} variant="ghost" size="icon">
-              <Mail className="h-5 w-5" />
+            <Button 
+              as="a" 
+              href={EMAIL_URL} 
+              variant="ghost" 
+              size="icon" 
+              className="text-gray-700 hover:text-gray-900 transition-transform hover:scale-110"
+            >
+              <Mail className="h-7 w-7" />
               <span className="sr-only">Email</span>
             </Button>
           </div>
@@ -122,6 +120,12 @@ export function MyPage() {
         <div className="container mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-4 md:flex-row">
           <p className="text-sm text-gray-600">© {new Date().getFullYear()} Jason Bhan. All rights reserved.</p>
           <div className="flex gap-6">
+            <a href="/#/privacy" className="text-sm text-gray-600 hover:text-gray-900">
+              Privacy Policy
+            </a>
+            <a href="/#/support" className="text-sm text-gray-600 hover:text-gray-900">
+              Support
+            </a>
             <a
               href={GITHUB_URL}
               target="_blank"
