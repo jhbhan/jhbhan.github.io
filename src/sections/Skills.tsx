@@ -9,17 +9,18 @@ export default function Skills() {
             <div>
               <h3 className="mb-6 text-xl font-bold border-b-2 border-gray-900 pb-2 text-gray-900">Mobile Development</h3>
               <div className="flex flex-wrap gap-2">
+                <SkillBadge name="React Native" />
+                <SkillBadge name="Expo" />
                 <SkillBadge name="Swift" />
                 <SkillBadge name="SwiftUI" />
-                <SkillBadge name="SpriteKit" />
-                <SkillBadge name="iCloud" />
-                <SkillBadge name="App Store Connect" />
               </div>
             </div>
             <div>
               <h3 className="mb-6 text-xl font-bold border-b-2 border-gray-900 pb-2 text-gray-900">Frontend</h3>
               <div className="flex flex-wrap gap-2">
                 <SkillBadge name="React" />
+                <SkillBadge name="Electron" />
+                <SkillBadge name="Redux" />
                 <SkillBadge name="TypeScript" />
                 <SkillBadge name="JavaScript" />
                 <SkillBadge name="Tailwind CSS" />

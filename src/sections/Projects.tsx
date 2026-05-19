@@ -11,19 +11,19 @@ export default function Project() {
           <ProjectCard
             title="WDYDT"
             description="What Did You Do Today? - A productivity tool that helps you track your daily accomplishments and stay focused on your goals."
-            tags={["Swift", "SwiftUI", "iCloud"]}
+            tags={["Tauri", "React", "TypeScript", "Tailwind CSS", "Firebase"]}
             icon={<CheckCircle className="h-10 w-10 text-gray-700" />}
           />
           <ProjectCard
             title="KoineGreek"
             description="An educational app designed for learning and practicing Biblical (Koine) Greek vocabulary and grammar through interactive exercises."
-            tags={["Swift", "SwiftUI"]}
+            tags={["React Native", "TypeScript", "Expo"]}
             icon={<Languages className="h-10 w-10 text-gray-700" />}
           />
           <ProjectCard
             title="Scripture Defender"
             description="A Bible verse memory and defense game that makes memorizing scripture engaging through interactive challenges."
-            tags={["Swift", "SpriteKit"]}
+            tags={["React", "Electron", "TypeScript", "Tailwind CSS"]}
             icon={<ShieldCheck className="h-10 w-10 text-gray-700" />}
           />
         </div>
