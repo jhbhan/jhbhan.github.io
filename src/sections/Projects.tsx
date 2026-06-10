@@ -1,7 +1,7 @@
 import { CheckCircle, Languages, ShieldCheck } from "lucide-react";
 import ProjectCard from "../components/ProjectCard";
 
-export default function Project() {
+export default function Projects() {
     return (
         <section id="projects" className="bg-gray-50 py-16">
         <div className="container mx-auto max-w-5xl px-6">

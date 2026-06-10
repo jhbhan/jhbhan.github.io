@@ -2,6 +2,7 @@ import GenealogyGame from "@jhbhan/genealogy-games";
 import KingsQuiz from "@jhbhan/kings-quiz";
 import { ParablesQuiz } from "@jhbhan/parable-quiz";
 import { useParams, useNavigate } from "react-router-dom";
+import Layout from "./components/Layout";
 
 interface PlayGroundProps {
   type?: string;
@@ -62,7 +63,11 @@ const PlayGround = ({ type }: PlayGroundProps) => {
 
 const PlayGroundWrapper = () => {
   const { type } = useParams(); // type will be undefined, "genealogy", or "parable"
-  return <PlayGround type={type} />;
+  return (
+    <Layout>
+      <PlayGround type={type} />
+    </Layout>
+  );
 };
 
 export default PlayGroundWrapper;

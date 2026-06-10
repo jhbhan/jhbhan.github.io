@@ -1,4 +1,5 @@
 import Layout from "./components/Layout"
+import { EMAIL_URL, EMAIL } from "./urls"
 
 export default function SupportPage() {
   const apps = [
@@ -40,7 +41,7 @@ export default function SupportPage() {
             <div>
               <h3 className="text-lg font-bold mb-2 text-gray-900">How do I report a bug?</h3>
               <p className="text-gray-700 text-base leading-relaxed">
-                Please send an email to <a href="mailto:jhbhan@gmail.com" className="text-gray-900 font-bold underline hover:text-blue-600 transition-colors">jhbhan@gmail.com</a> with a description of the issue and your device model.
+                Please send an email to <a href={EMAIL_URL} className="text-gray-900 font-bold underline hover:text-blue-600 transition-colors">{EMAIL}</a> with a description of the issue and your device model.
               </p>
             </div>
             <div>
@@ -64,8 +65,8 @@ export default function SupportPage() {
           <p className="text-gray-700 text-base mb-4">
             For any other inquiries, please reach out via email:
           </p>
-          <a href="mailto:jhbhan@gmail.com" className="text-2xl font-black text-gray-900 hover:text-blue-600 underline transition-colors">
-            jhbhan@gmail.com
+          <a href={EMAIL_URL} className="text-2xl font-black text-gray-900 hover:text-blue-600 underline transition-colors">
+            {EMAIL}
           </a>
         </section>
       </div>

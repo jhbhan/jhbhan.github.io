@@ -1,4 +1,5 @@
 import Layout from "./components/Layout"
+import { EMAIL_URL, EMAIL } from "./urls"
 
 export default function PrivacyPolicyPage() {
   return (
@@ -48,7 +49,7 @@ export default function PrivacyPolicyPage() {
             <p className="text-gray-700 leading-relaxed text-base">
               If you have any questions regarding this Privacy Policy, you can contact me at:
               <br />
-              <a href="mailto:jhbhan@gmail.com" className="text-gray-900 hover:text-blue-600 underline mt-2 inline-block font-bold transition-colors">jhbhan@gmail.com</a>
+              <a href={EMAIL_URL} className="text-gray-900 hover:text-blue-600 underline mt-2 inline-block font-bold transition-colors">{EMAIL}</a>
             </p>
           </section>
         </div>

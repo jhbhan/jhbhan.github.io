@@ -1,5 +1,5 @@
 import { Mail, Github, Linkedin } from "lucide-react";
-import { EMAIL_URL, GITHUB_URL, LINKEDIN_URL } from "../urls";
+import { EMAIL_URL, GITHUB_URL, LINKEDIN_URL, EMAIL } from "../urls";
 
 function Contact() {
     return (
@@ -17,7 +17,7 @@ function Contact() {
               className="flex items-center gap-3 text-xl font-bold text-gray-900 hover:text-gray-600 transition-all hover:scale-105"
             >
               <Mail className="h-6 w-6" />
-              jhbhan@gmail.com
+              {EMAIL}
             </a>
             
             <div className="flex gap-8 mt-4">

@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "react-router-dom"
+import { Link, useLocation, useNavigate } from "react-router-dom"
 import { EMAIL_URL, GITHUB_URL, LINKEDIN_URL } from "../urls"
 
 interface LayoutProps {
@@ -7,13 +7,34 @@ interface LayoutProps {
 }
 
 export default function Layout({ children }: LayoutProps) {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const isHomePage = location.pathname === "/";
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+    if (isHomePage) {
+      e.preventDefault();
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      } else if (sectionId === "top") {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    } else {
+      // If not on home page, navigate to home and then we might need to scroll
+      // but for now, just navigating to home is fine.
+      navigate("/");
+    }
+  };
+
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen flex flex-col bg-white">
       {/* Header */}
       <header className="sticky top-0 z-10 border-b bg-white/90 backdrop-blur-md">
         <div className="container mx-auto flex h-16 max-w-5xl items-center justify-between px-6">
           <Link
             to="/"
+            onClick={(e) => handleNavClick(e, "top")}
             className="text-lg font-bold hover:text-gray-600 transition-colors text-gray-900"
           >
             Jason Bhan
@@ -21,18 +42,21 @@ export default function Layout({ children }: LayoutProps) {
           <nav className="flex gap-8">
             <Link
               to="/"
+              onClick={(e) => handleNavClick(e, "projects")}
               className="text-sm font-semibold hover:text-gray-600 transition-colors text-gray-900"
             >
               Projects
             </Link>
             <Link
               to="/"
+              onClick={(e) => handleNavClick(e, "skills")}
               className="text-sm font-semibold hover:text-gray-600 transition-colors text-gray-900"
             >
               Skills
             </Link>
             <Link
               to="/"
+              onClick={(e) => handleNavClick(e, "contact")}
               className="text-sm font-semibold hover:text-gray-600 transition-colors text-gray-900"
             >
               Contact
@@ -41,7 +65,7 @@ export default function Layout({ children }: LayoutProps) {
         </div>
       </header>
 
-      <main>{children}</main>
+      <main className="flex-1">{children}</main>
 
       {/* Footer */}
       <footer className="border-t py-8 mt-auto bg-gray-50">
